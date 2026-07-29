@@ -346,9 +346,27 @@ export default function Home() {
                   <h3>{member.name}</h3>
                   <small>{member.role}</small>
                   <p>{member.note}</p>
-                  <a href="#notice" aria-label={`${member.name}の次の記事へ`}>プロフィールを見る <span>→</span></a>
+                  <a href={`#member-profile-${index + 1}`} aria-label={`${member.name}のプロフィールを見る`}>
+                    プロフィールを見る <span>→</span>
+                  </a>
                 </div>
               </article>
+            ))}
+          </div>
+          <div className="member-profiles" aria-label="新会員プロフィール">
+            {newMembers.map((member, index) => (
+              <section
+                className="member-profile"
+                id={`member-profile-${index + 1}`}
+                key={`profile-${member.name}`}
+              >
+                <span>FICTIONAL PROFILE — 0{index + 1}</span>
+                <h3>{member.name}</h3>
+                <p className="member-profile-role">{member.company}／{member.role}</p>
+                <p>{member.note}</p>
+                <small>人物名・企業名・肩書・紹介内容はすべて架空です。</small>
+                <a href="#members">新会員一覧へ戻る ↑</a>
+              </section>
             ))}
           </div>
         </div>

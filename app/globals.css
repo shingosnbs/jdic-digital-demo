@@ -776,6 +776,55 @@ nav a:hover {
   font-weight: 800;
 }
 
+.member-profiles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  margin-top: 42px;
+}
+
+.member-profile {
+  padding: clamp(26px, 3vw, 42px);
+  background: rgba(255, 255, 255, .72);
+  border-top: 3px solid var(--rust);
+}
+
+.member-profile > span {
+  color: var(--rust);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .16em;
+}
+
+.member-profile h3 {
+  margin: 12px 0 6px;
+  color: var(--ink);
+  font: 500 28px/1.35 "Yu Mincho", serif;
+}
+
+.member-profile p {
+  margin: 14px 0;
+  font-family: "Yu Mincho", serif;
+  font-size: 13px;
+}
+
+.member-profile .member-profile-role,
+.member-profile small {
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 10px;
+}
+
+.member-profile a {
+  display: inline-block;
+  margin-top: 18px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid currentColor;
+  color: var(--rust);
+  font-size: 10px;
+  font-weight: 800;
+}
+
 .notice-section {
   display: grid;
   grid-template-columns: .65fr 1.35fr;
@@ -1163,6 +1212,7 @@ footer p {
 
   .qa-grid,
   .member-grid,
+  .member-profiles,
   .value-grid {
     grid-template-columns: 1fr;
   }
