@@ -209,7 +209,7 @@ export default function Home() {
         </div>
         <div className="hero-image">
           <img
-            src="/images/hero-workshop.png"
+            src="images/hero-workshop.png"
             alt="架空の歯科器械メーカーで器具を確認する技術者の手元"
           />
           <div className="image-caption">
@@ -229,7 +229,7 @@ export default function Home() {
       <section className="greeting section-shell" id="greeting">
         <div className="portrait-column">
           <img
-            src="/images/president-portrait.png"
+            src="images/president-portrait.png"
             alt="架空の会長、星野一道のポートレート"
           />
           <p><span>架空の会長</span><strong>星野 一道</strong><small>未来歯研製作所</small></p>
@@ -292,7 +292,7 @@ export default function Home() {
       <section className="lifestyle section-shell" id="lifestyle">
         <div className="lifestyle-image">
           <img
-            src="/images/lifestyle-coast.png"
+            src="images/lifestyle-coast.png"
             alt="海辺でカメラを持つ架空の会員、海野航平"
           />
           <span>MEMBER LIFE / FICTIONAL PERSON</span>
